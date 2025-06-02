@@ -1,0 +1,621 @@
+body, html {
+  margin: 0%;
+  padding: 0%;
+}
+
+/* Top Header */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center children vertically */
+  background-color: rgb(47, 71, 78); /* Set background color */
+  color: azure;
+  position: relative; /* Allow absolute positioning for child elements */
+  padding: 0 20px; /* Add padding for spacing */
+  height: 150px;
+}
+
+/* Wrapper for left side content */
+.top-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0; /* Remove margin */
+  padding: 0;
+  align-self: flex-start;
+  margin-top: 10px; /* Remove padding */
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: flex-start; /* Align items to the left */
+  margin-top:10px; /* Add space between contact info and logo-header */
+}
+
+.toll-free {
+  margin-bottom: 2px; /* Add space below the toll-free section */
+  font-size: 14px; /* Adjust font size */
+  color: white; /* Adjust text color */
+}
+
+.link { /* Add space below the link */
+  color: rgb(153, 174, 77); /* Adjust link color */
+  text-decoration: none; /* Remove underline */
+  font-size: 14px; /* Adjust font size */
+}
+
+.logo-header {
+  display: flex; /* Align children (logo, .sotc-box, and .site-title) horizontally */
+  align-items: center;
+  gap: 6px; /* Add space between items */
+}
+
+.logo {
+  display: block;
+  width: 40px; /* Adjust the size of the logo */
+  margin: 0; /* Remove any extra margin */
+  padding: 0;
+}
+
+.sotc-box {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Horizontally center the text */
+  align-items: center; /* Vertically center the text */
+  background-color: rgb(57, 169, 206);
+  color: rgb(23, 23, 21);
+  font-size: 10px;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 16px;
+  border-radius: 3px;
+  font-family: Arial, sans-serif;
+  margin-right: 3px;
+  padding: 0;
+}
+
+.site-title {
+  margin: 0;
+  padding: 0; 
+  font-size: 15px;
+  font-weight: bold 100; 
+  font-family: anton, sans-serif; /* Use a sans-serif font */
+  color: rgba(255, 255, 255, 0.76);
+  white-space: nowrap; 
+}
+
+.search-box {
+  position: absolute;
+  top: 50%; /* Center vertically in .top-header */
+  left: 55%; /* Move to the center horizontally */
+  transform: translate(-50%, -50%); /* Adjust back by half its width and height */
+  width: 500px;
+}
+
+.search-box input[type="text"] {
+  width: 100%; /* Make the input take the full width of the container */
+  height: 40px; /* Set the height of the input */
+  padding-right: 60px; /* Add space for the button inside the input */
+  border: 1px solid hsl(39, 78%, 43%); /* Add a border */
+  border-radius: 6px; /* Add rounded corners */
+  font-size: 16px; /* Adjust font size */
+  box-sizing: border-box; /* Ensure padding doesn't affect the width */
+}
+
+.search-box button {
+  position: absolute; /* Position the button inside the input */
+  top: 50%; /* Center the button vertically */
+  right: 0; /* Align the button to the far right */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  height: 40px; /* Set the height of the button */
+  width: 50px; /* Increase the width to cover the right side */
+  border: none; /* Remove the border */
+  background-color: rgb(0, 187, 255); /* Set button background color */
+  color: white; /* Set button text color */
+  border-radius: 6px 6px 6px 3px; /* Match the input's border radius on the right */
+  cursor: pointer; /* Add a pointer cursor */
+}
+
+.top-header .top-links {
+  position: absolute; /* Position it independently */
+  top: 10px; /* Align it to the top of the .top-header */
+  right: 10px; /* Align it to the right of the .top-header */
+  display: flex; /* Use flexbox for horizontal alignment of links */
+  align-items: center; /* Vertically align links */
+  gap: 20px; /* Add space between links */
+}
+
+.top-header .top-links a {
+  color: white;
+  font-family: sofia+sans-serif; /* Use a sans-serif font */
+  margin: 0;
+  font-weight: bold 600;
+}
+
+.top-header .top-links a:first-child {
+  color: rgb(209, 72, 72);
+}
+
+.icon {
+  width: 16px; /* Adjust the size of the icon */
+  height: 16px; /* Adjust the size of the icon */
+  margin-right: 5px; /* Add space between the icon and the text */
+  vertical-align: middle;
+}
+
+.icon1 {
+  width: 17px;
+  height: 19px;
+  margin-right: 7px;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+.icon2 {
+  width: 16px;
+  padding-right: 5px;
+  height: 16px;
+}
+
+.carousel-item img {
+  width:  100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+#carouselIndicators .carousel-control-prev-icon,
+#carouselIndicators .carousel-control-next-icon {
+
+  background-color: #4fa7bb;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transform: translateY(-80%);
+  /* Position the previous control */
+}
+
+#carouselIndicators .carousel-control-prev-icon:hover,
+#carouselIndicators .carousel-control-next-icon:hover {
+  background-color: rgba(228, 196, 100, 0.924); /* Darker on hover */
+}
+
+
+.ai-card-section {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.ai-card {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  overflow: hidden;
+}
+
+.ai-card-text {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ai-card-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2d2d2d;
+}
+
+.ai-card-text p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.ai-btn {
+  padding: 12px 24px;
+  background-color: #4fa7bb;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.ai-btn:hover {
+  background-color: #b97309fd;
+}
+
+.ailogo{
+  width: 30px;
+}
+
+.ai-card-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-width: 300px;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.ai-card-image img {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius:0 10px 0 10px;
+}
+
+.package-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.package-info h3 {
+  font-family: poppins , sans-serif;
+  text-align: center;
+  color: #00000056;
+  font-weight:  900;
+}
+
+.travel-packages {
+  padding: 40px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.travel-packages h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #79b7c8;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 260px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  background-color: rgb(255, 255, 255);
+  padding: 16px;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.package-price {
+  font-size: 16px;
+  color: #322525;
+  font-weight: 500;
+}
+
+.container{
+  background-color: white;
+
+}
+
+.special-package-info {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.special-package-info h5 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+.carousel-item {
+      transition: transform 0.6s ease;
+    }
+
+
+    .tour-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .tour-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .tour-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .tour-card .card-body {
+      background-color: #fff;
+      padding: 16px;
+    }
+
+    .tour-card h5 {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .package-price {
+      font-size: 15px;
+      color: #322525;
+      font-weight: 500;
+    }
+    #packageCarousel .carousel-control-prev,
+    #packageCarousel .carousel-control-next {
+      width: 40px;
+      height: 40px;
+      background-color: #4fa7bb;
+      border-radius: 50%;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      top: 50%;
+      transform: translateY(-50%);
+      transition: background-color 0.3s ease;
+      z-index: 2;
+    }
+    
+    #packageCarousel .carousel-control-prev {
+      left: -50px; /* Pushes the button outside the carousel */
+    }
+    
+    #packageCarousel .carousel-control-next {
+      right: -50px;
+    }
+    
+    #packageCarousel .carousel-control-prev:hover,
+    #packageCarousel .carousel-control-next:hover {
+      background-color: rgba(228, 196, 100, 0.924); /* hover color */
+    }
+    
+    #packageCarousel .carousel-control-prev-icon,
+    #packageCarousel .carousel-control-next-icon {
+      width: 16px;
+      height: 16px;
+      background-size: 100% 100%;
+      background-color: transparent; /* makes arrow white */
+    }
+    
+  .why {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+      background-color: #f9f9f9;
+    }
+    
+    .why h6 {
+      font-family: playfair-display, serif;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+    
+    .why1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+      padding: 0 20px;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+    
+    .why-item {
+      background-color: #fff;
+      width: 220px;
+      height: 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; /* changed from space-between */
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      box-sizing: border-box;
+      flex-shrink: 0;
+      position: relative;
+    }
+    
+    .why-item img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+    }
+    
+    /* ✅ Ensures all 'abouts' titles are aligned by giving them fixed height */
+    .abouts {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin: 10px 0 5px;
+      font-size: 16px;
+      height: 40px; 
+      text-align: center;/* ✅ newly added for uniform alignment */
+    }
+    
+      .why-item p {
+        font-size: 14px;
+        margin: 0 0 10px;
+        min-height: 60px; /* Optional tweak for equal paragraph space */
+        text-align: center;
+      }
+    
+    /* ✅ Added this wrapper class to control vertical layout in card */
+    .why-text {
+      display: flex; /* ✅ new */
+      flex-direction: column; /* ✅ new */
+      justify-content: space-between;
+      align-items: center; /* ✅ new */
+      flex: 1; /* ✅ new: fills remaining vertical space */
+      width: 100%;
+    }
+    
+    /* ✅ Ensures underline stays at bottom of the card */
+    .underline {
+      height: 4px;
+      width: 100%;
+      border-radius: 3px;
+      margin-top: auto; /* ✅ changed from 10px to auto for bottom placement */
+    }
+    
+    /* Color classes */
+    .blue   { background-color: #9cdeed; }    
+    .orange { background-color: #e6b86b; }
+    .red    { background-color: #d77070; }
+    .purple { background-color: #c6bcdc; }
+    .yellow { background-color: #e2d68a; }
+    
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      padding: 30px 20px 10px;
+    }
+    
+    .footer-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      border-bottom: 1px solid #555;
+      padding-bottom: 20px;
+    }
+    
+    .footer-contact p {
+      margin: 5px 0;
+      font-size: 14px;
+      text-align: center;
+    }
+    
+    .phone-icon {
+      margin-right: 5px;
+      font-size: 16px;
+    }
+    
+    .small {
+      font-size: 12px;
+      color: #ccc;
+    }
+    
+    .footer-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .footer-btn {
+      padding: 8px 15px;
+      background-color: #444;
+      border: none;
+      color: white;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    
+    .subscribe-box {
+      display: flex;
+      gap: 5px;
+    }
+    
+    .subscribe-box input {
+      padding: 6px 10px;
+      border-radius: 3px;
+      border: none;
+      width: 200px;
+    }
+    
+    .submit-btn {
+      padding: 6px 12px;
+      background-color: #e53935;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 20px;
+      padding: 10px 0;
+      border-top: 1px solid #555;
+      border-bottom: 1px solid #555;
+    }
+    
+    .link-section {
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .footer-social {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .footer-social p {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .footer-social .icons span {
+      font-size: 20px;
+      margin: 0 8px;
+      cursor: pointer;
+    }
+    
+    .footer-bottom {
+      text-align: center;
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 20px;
+    }
+    
